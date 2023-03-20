@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Playfair+Display&family=Poppins:wght@300&family=Prata&display=swap');
+/* c
+font-family: 'Cookie', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prata', serif; */
+
+/* header {
+    font-family: 'Bebas Neue', cursive;
+} */
+.card-title {
+    font-family: 'Cookie', cursive;
+    text-align: center;
+}
+.card img {
+    height: 200px;
+}
+.card-author {
+    font-family: 'Prata', serif;
+    font-size: 15px;
+    text-align: center;
+    /* height: 18px; */
+}
+.card-text {
+    font-size: 12px;
+    text-align: justify;
+    /* height: 150px; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn-group {
+    font-size: 10px;
+    /* height: 30px; */
+}
+.footer-divider {
+    height: 1rem;
+    background-color: rgba(104, 4, 4, 0.1);
+    border: solid rgba(122, 7, 7, 0.281);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(179, 7, 7, 0.1), inset 0 0.125em 0.5em rgba(143, 4, 4, 0.445);
+}
+.footer-divider h5 {
+    font-family: 'Bebas Neue', cursive;
+}
+.nav flex-column {
+    font-family: 'Bebas Neue', cursive;
+}
+

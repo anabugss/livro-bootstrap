@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7f445e6714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>LIVRO 2.0</title>
+</head>
+<body>
+    <header class="website-header bg-danger" style="background-image: var(--bs-gradient); font-family: 'Bebas Neue', cursive;">
+        <div class="d-flex flex-row align-items-center text-light ps-2">
+            <div class="col-4 pt-1 text-left">
+                <span class="fs-1">L I V R O</span>
+            </div>
+            <div class="col-4 text-center">
+                <img class="w-25 p-1" src="assets/images/book-logo.png">
+            </div>
+            <div class="col-4 text-light fs-4 d-flex justify-content-end">
+                <i title="LOG IN" class="fa-regular fa-circle-user pe-4"></i>
+                <i title="Register" class="fa-solid fa-circle-user pe-4"></i>
+                <i title="Check Cart Content" class="fa-solid fa-cart-shopping pe-4"></i>
+                <i title="Get Help" class="fa-regular fa-circle-question pe-4"></i>
+            </div>
+        </div>
+    </header>
+    <div class="nav-scroller px-3 py-2 mb-2 text-bg-danger">
+        <nav class="nav d-flex justify-content-between align-items-center">
+            <ul class="nav nav-pills ">
+                <li class="nav-item">
+                    <a class="nav-link active bg-light text-danger" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Genre</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Art</a></li>
+                        <li><a class="dropdown-item" href="#">Biography</a></li>
+                        <li><a class="dropdown-item" href="#">Children's</a></li>
+                        <li><a class="dropdown-item" href="#">Christian</a></li>
+                        <li><a class="dropdown-item" href="#">Classics</a></li>
+                        <li><a class="dropdown-item" href="#">Comics</a></li>
+                        <li><a class="dropdown-item" href="#">Cookbooks</a></li>
+                        <li><a class="dropdown-item" href="#">E-books</a></li>
+                        <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                        <li><a class="dropdown-item" href="#">Fiction</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">More</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >Browse</a>
+                    <ul class="dropdown-menu no-text">
+                        <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                        <li><a class="dropdown-item" href="#">Choice Awards</a></li>
+                        <li><a class="dropdown-item" href="#">Give Aways</a></li>
+                        <li><a class="dropdown-item" href="#">New Releases</a></li>
+                        <li><a class="dropdown-item" href="#">Give Aways</a></li>
+                        <li><a class="dropdown-item" href="#">List</a></li>
+                        <li><a class="dropdown-item" href="#">Explore</a></li>
+                        <li><a class="dropdown-item" href="#">News & Interviews</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">More</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Community
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Groups</a></li>
+                        <li><a class="dropdown-item" href="#">Quotes</a></li>
+                        <li><a class="dropdown-item" href="#">Ask the Author</a></li>
+                        <li><a class="dropdown-item" href="#">People</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-search">
+                <input type="search" class="form-control" placeholder="Search" label="search">
+            </div>
+        </nav>
+    </div>
+    <!-- <div class="container">
+        <div id="carouseIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active d-flex justify-content-center">
+                    <img src="assets/images/carousel-1.png" class="d-block w-25">
+                </div>
+                <div class="carousel-item active d-flex justify-content-center">
+                    <img src="assets/images/carousel-2.png" class="d-block w-25">
+                </div>
+                <div class="carousel-item active d-flex justify-content-center">
+                    <img src="assets/images/carousel-3.png" class="d-block w-25">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div> -->
+    <div class="cards py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/The-Arabian-Nights.jpg" class="shadow p-3 mb-5 bg-body rounded ">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">The Arabian Nights</h2>
+                            <h5 class="card-author">Sir Richard F. Burton | 1775</h5>
+                            <p class="card-text ">
+                                The Arabian Nights is your magic carpet ride to exotic lands full of wonders and marvels. First collected nearly a thousand years ago, these folktales are presented as stories.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$14.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/Alice-in-Wonderland.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">Alice in Wonderland</h2>
+                            <h5 class="card-author">Lewis Carroll | 1865</h5>
+                            <p class="card-text">
+                                When Alice sees a white rabbit take a watch out of its waistcoat pocket she decides to follow it, and a sequence of most unusual events is set in motion. This mini book contains the entire topsy-turvy stories of Alice's Adventures in Wonderland and Through the Looking-Glass, accompanied by practical notes and Martina Pelouso's memorable full-colour illustrations.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$14.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/Ozma-of-Ox.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">Ozma of Ox</h2>
+                            <h5 class="card-author">L. Frank Baum | 1907</h5>
+                            <p class="card-text">
+                                Blown overboard while sailing with her uncle, Dorothy finds herself in the fairy realm of Ev. She sets out with her friends to rescue the Queen of Ev and her ten children, who have been imprisoned by the cruel Nome King. But even Ozma, the wise Ruler of Oz, is no match for the clever king, and it's up to Dorothy to save everyone ...
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$14.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/Mary-Poppins.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">Mary Poppins</h2>
+                            <h5 class="card-author">P.L. Travers | 1934</h5>
+                            <p class="card-text">
+                                It all starts when Mary Poppins is blown by the east wind onto the doorstep of the Banks house. She becomes a most unusual nanny to Jane, Michael, and the twins. Who else but Mary Poppins can slide up banisters, pull an entire armchair out of an empty carpetbag, and make ...
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$14.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/The-Once-and-Future-King.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">The Once and Future King</h2>
+                            <h5 class="card-author">T. H. White | 1958</h5>
+                            <p class="card-text">
+                                T.H White′s masterful retelling of the Arthurian legend is an abiding classic. Here all five volumes that make up the story are published in one volume, as White himself always wished. Exquisite comedy offsets the tragedy of Arthur′s personal doom as White brings to life the major Britis...
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$19.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/Howls-Moving-Castle.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">Howl's Moving Castle</h2>
+                            <h5 class="card-author">Diana Wynne Jones | 1986</h5>
+                            <p class="card-text">
+                                Sophie has the great misfortune of being the eldest of three daughters, destined to fail miserably should she ever leave home to seek her fate. But when she unwittingly attracts the ire of the Witch of the Waste, Sophie finds...
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$21.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/To-Kill-A-Mockingbird.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">To Kill a Mockingbird</h2>
+                            <h5 class="card-author">Harper Lee | 1960</h5>
+                            <p class="card-text">
+                                Compassionate, dramatic, and deeply moving, "To Kill A Mockingbird" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. 
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$18.79"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/The-Great-Gatsby.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">The Great Gatsby</h2>
+                            <h5 class="card-author">F. Scott Fitzgerald | 1925</h5>
+                            <p class="card-text">
+                                This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted "gin was the national drink and sex the national obsession," it is an exquisitely crafted tale of America in the 1920s.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$18.59"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-danger shadow p-3 mb-5 bg-body rounded d-flex align-items-center">
+                        <img src="assets/images/Pride-and-Prejudice.jpg" class="shadow p-3 mb-5 bg-body rounded">
+                        <div class="card-body p-2">
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <div class="icons-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <h2 class="card-title fs-2">Pride and Prejudice</h2>
+                            <h5 class="card-author">Jane Austen | 1813</h5>
+                            <p class="card-text">
+                                Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work "her own darling child" and its vivacious heroine, Elizabeth Bennet, "as delightful a creature as ever appeared in print."
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center p-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Cart</button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Add to Wishlist</button>
+                                <button title="$19.99"type="button" class="btn btn-sm btn-outline-danger">BUY NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bottom d-flex justify-content-center align-items-center">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link text-bg-danger" href="#">1</a>
+            </li>
+            <li class="page-item "><a class="page-link text-danger" href="#">2</a></li>
+            <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link text-danger" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="footer-divider"></div>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row text-danger" style="font-family: 'Poppins', sans-serif;">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fw-bold">COMPANY</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Careers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Terms</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Privacy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Interest Based Ads</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Ad Preferences</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fw-bold">WORK WITH US</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Authors</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Advertise</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">hors & Ad Blog</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">API</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="fw-bold">CONNECT</h5>
+                    <div class="footer-icons fs-3">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5 class="fw-bold">Let's get in touch!</h5>
+                        <p>For updates, offers and exciting news. </p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="subscription" class="visually-hidden">E-mail Address</label>
+                            <input id="subscription" type="text" class="form-control" placeholder="E-mail Address">
+                            <button class="btn btn-danger" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 boreder-top">
+                        <p  class="fw-bold">All rights reserved. | AKBUGCAT</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
